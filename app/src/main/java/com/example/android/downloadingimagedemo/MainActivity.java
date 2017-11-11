@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         DownloadTask task = new DownloadTask();
         try {
 
-            Bitmap map = task.execute("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQLXyd0uMUmhAcMpITeK9Kdj8XGyM5xg3DHYJqKhApp2jspOyE").get();
+            Bitmap map = task.execute("https://upload.wikimedia.org/wikipedia/en/a/aa/Bart_Simpson_200px.png").get();
             downloadedImage.setImageBitmap(map);
             Log.i("image set","task successful");
 
